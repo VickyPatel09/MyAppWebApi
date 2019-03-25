@@ -23,6 +23,7 @@ namespace MyAngularAppWebApi.Controllers
         [HttpGet, Route("GetMembers")]
         public List<Users> GetMembers()
         {
+
             using (var context = new MyAngularAppContext())
             {
                 var Members=context.Users.ToList();
